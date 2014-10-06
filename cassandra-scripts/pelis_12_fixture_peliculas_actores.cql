@@ -6,7 +6,7 @@ update peliculas
          	77f92efc-f48d-4f01-80a2-25c12ec9915c : 'Eric Bana',
           	272505d8-0e33-4837-90a9-cd79ad79396f : 'Rebecca Hall'
           }
-          where anio_estreno = '2014-02-01' AND id = 08cbbce4-4341-4f26-888f-5a842af819f8;
+          where fecha_estreno = '2014-02-01' AND id = 08cbbce4-4341-4f26-888f-5a842af819f8;
 
  
 /* Enders Game */
@@ -17,7 +17,7 @@ update peliculas
 			eee25de1-2939-4ca7-9598-eb30b3077b97: 'Hailee Steinfeld',
 			d596f571-51ff-4282-8594-180a2bfdf2b4: 'Ben Kingsley'
           }
-          where anio_estreno = '2014-02-01' AND id = 0a1ec3aa-9333-458f-b859-4cf149c71bc8;
+          where fecha_estreno = '2014-02-01' AND id = 0a1ec3aa-9333-458f-b859-4cf149c71bc8;
 
 /* Runner runner */
 update peliculas
@@ -26,7 +26,7 @@ update peliculas
 			e3838466-ed81-41f7-851c-f93c7430e9c9: 'Justin Timberlake',
 			da049843-e062-49d9-b196-d6e83600796e: 'Gemma Arterton'			
           }
-          where anio_estreno = '2014-02-01' AND id = 1cf766e7-e054-46ac-97e0-0b987c0134a4;
+          where fecha_estreno = '2014-02-01' AND id = 1cf766e7-e054-46ac-97e0-0b987c0134a4;
 
 /* Gravity */
 update peliculas
@@ -35,7 +35,7 @@ update peliculas
          	e96ff2f1-193a-4c48-83f3-f91c9824aa3a: 'George Clooney',
 			62236f97-5a74-4915-9584-c8a6ad4e11ec: 'Phaldut Sharma'			
           }
-          where anio_estreno = '2014-02-01' AND id = 3ce7ac33-a452-49c0-9832-2944fef51c35;
+          where fecha_estreno = '2014-02-01' AND id = 3ce7ac33-a452-49c0-9832-2944fef51c35;
 
 /* Gambit, el plan perfecto */
 update peliculas
@@ -44,7 +44,7 @@ update peliculas
 			9a3041a0-edf0-49bf-91b0-80e85fc150b5: 'Cameron Diaz',
 			f14745a5-2d03-4fcd-8551-844610ea8381: 'Alan Rickman'
           }
-          where anio_estreno = '2014-02-01' AND id = 438c7131-7550-4188-ad8d-47ac9a4c280e;
+          where fecha_estreno = '2014-02-01' AND id = 438c7131-7550-4188-ad8d-47ac9a4c280e;
 
 /* Redemption */
 update peliculas
@@ -53,7 +53,7 @@ update peliculas
 			11ffffbe-94b6-40b5-a205-0484bf8d6a2e: 'Agata Buzek',
 			68e99fab-7beb-42ea-b9ae-9b1803e5c9a3: 'Benedict Wong'
           }
-          where anio_estreno = '2014-02-01' AND id = 66c3facf-4ba7-477e-95dd-731ff5b08c55;
+          where fecha_estreno = '2014-02-01' AND id = 66c3facf-4ba7-477e-95dd-731ff5b08c55;
 
 /* The frozen ground */
 update peliculas
@@ -66,7 +66,7 @@ update peliculas
 			b338bcd3-a39b-4ec7-9829-36ec1f5e1098: 'Dean Norris',
 			3c5ff2ad-b3e6-4db4-8a55-789610b95844: 'Kevin Dunn'
           }
-          where anio_estreno = '2014-02-01' AND id = 7011f15d-37a4-4df6-8cba-9c7095a08e49;
+          where fecha_estreno = '2014-02-01' AND id = 7011f15d-37a4-4df6-8cba-9c7095a08e49;
 
 /* Jackass: Bad Grandpa */
 update peliculas
@@ -74,7 +74,7 @@ update peliculas
 			e6ae7934-fd71-445c-ab80-866ffb2b4554: 'Johnny Knoxville',
 			5d64a0f4-3c62-4bf6-8488-e401e9d356f5: 'Jackson Nicoll'
           }
-          where anio_estreno = '2014-02-01' AND id = 72c42922-6620-4b85-a2fc-e0f13d088a87;
+          where fecha_estreno = '2014-02-01' AND id = 72c42922-6620-4b85-a2fc-e0f13d088a87;
 
 /* As i lay dying */
 update peliculas
@@ -82,7 +82,7 @@ update peliculas
 				b8e0b24c-667d-43e5-b37b-20121eb21ee6: 'James Franco',
 				ce06cf4b-c72a-4d0e-90a9-581b939f5d07: 'Logan Marshall-Green'
           }
-          where anio_estreno = '2014-02-01' AND id = 83511038-15d0-4cc4-90bc-94b6ed0f2b8d;
+          where fecha_estreno = '2014-02-01' AND id = 83511038-15d0-4cc4-90bc-94b6ed0f2b8d;
            
 /* The haunting of Helena */
 update peliculas
@@ -92,7 +92,7 @@ update peliculas
 				c0c2efd3-a805-4460-a9e4-2b1af6e2722b: 'Jarreth J. Merz',
 				3c74dbcf-bff8-4922-a992-7ebc4eb54cb9: 'Matt Patresi'
           }
-          where anio_estreno = '2014-02-01' AND id = f2d9ddec-3e43-4c29-9b48-da604c26eb08;
+          where fecha_estreno = '2014-02-01' AND id = f2d9ddec-3e43-4c29-9b48-da604c26eb08;
 
 /* The Butler */
 update peliculas
@@ -103,7 +103,7 @@ update peliculas
 				199e0a18-984d-4033-b673-9988e9b52b3c: 'Oprah Winfrey',
 				805a8a59-2e34-438c-8949-8a515a673809: 'John Cusack'
           }
-          where anio_estreno = '2014-02-01' AND id = f4d4449e-d0df-4fb3-9d7e-ffc824279835;
+          where fecha_estreno = '2014-02-01' AND id = f4d4449e-d0df-4fb3-9d7e-ffc824279835;
            
 
 /* Actualizamos actores */

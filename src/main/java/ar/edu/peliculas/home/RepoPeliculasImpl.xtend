@@ -46,7 +46,7 @@ class RepoPeliculasImpl {
 		val CQL3_CF = ColumnFamily.newColumnFamily("Cql3CF", StringSerializer.get, StringSerializer.get)
 		val fechaEstrenoString = new SimpleDateFormat("yyyy-MM-dd").format(fechaEstreno)
 		val cqlResult = keyspace.prepareQuery(CQL3_CF).withCql(
-			"SELECT anio_estreno, id, sinopsis, titulo, actores  FROM peliculas WHERE anio_estreno = '" + fechaEstrenoString + "';").execute
+			"SELECT fecha_estreno, id, sinopsis, titulo, actores  FROM peliculas WHERE fecha_estreno = '" + fechaEstrenoString + "';").execute
 
 		cqlResult.result.rows.map [ 
 			val filaPelicula = it.columns

@@ -36,12 +36,12 @@ USE imdb;
  * 
  */
 CREATE TABLE IF NOT EXISTS "peliculas" (
-	anio_estreno timestamp,
+	fecha_estreno timestamp,
 	id uuid,
 	titulo text,
 	sinopsis text,
 	actores map<uuid, text>,
-	primary key (anio_estreno, id)	
+	primary key (fecha_estreno, id)	
 	);
 	 	
 /* CF actores */
@@ -51,14 +51,12 @@ CREATE TABLE IF NOT EXISTS "peliculas" (
 CREATE TABLE IF NOT EXISTS "actores" (
 	id uuid primary key,
 	nombre text
-	/* peliculas list<uuid> */
-	/* 2.1 peliculas list<tuple<timestamp, uuid, text>> */
 );
 
 CREATE TABLE IF NOT EXISTS "actores_peliculas" (
 	actor_id uuid,
 	pelicula_id uuid,
-	anio_estreno timestamp,
+	fecha_estreno timestamp,
 	titulo text,
 	primary key (actor_id, pelicula_id)
 );
