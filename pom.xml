@@ -20,7 +20,7 @@
 		<dependency>
 			<groupId>org.uqbar-project</groupId>
 			<artifactId>arena-jface</artifactId>
-			<version>3.4-SNAPSHOT</version>
+			<version>3.5-SNAPSHOT</version>
 		</dependency>
 		<!-- dependencias de Astyanax - Driver de Cassandra -->
 		<dependency>
