@@ -1,17 +1,19 @@
 package ar.edu.peliculas.appModel
 
 import ar.edu.peliculas.domain.Pelicula
+import ar.edu.peliculas.home.RepoPeliculasImpl
 import java.util.Date
 import java.util.List
+import org.eclipse.xtend.lib.annotations.Accessors
 import org.uqbar.commons.utils.Observable
-import ar.edu.peliculas.home.RepoPeliculasImpl
 
 @Observable
+@Accessors
 class VerEstrenosAppModel {
 	
-	@Property Date fechaEstreno
-	@Property List<Pelicula> peliculas
-	@Property Pelicula peliculaSeleccionada
+	Date fechaEstreno
+	List<Pelicula> peliculas
+	Pelicula peliculaSeleccionada
 	
 	// Atributos de manejo interno
 	RepoPeliculasImpl repoPeliculas = RepoPeliculasImpl.instance

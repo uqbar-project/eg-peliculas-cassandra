@@ -4,15 +4,17 @@ import java.io.Serializable
 import java.util.ArrayList
 import java.util.List
 import java.util.UUID
+import org.eclipse.xtend.lib.annotations.Accessors
 import org.uqbar.commons.utils.Observable
 
 @Observable
+@Accessors
 class Pelicula implements Serializable {
 
-	@Property UUID id
-	@Property String titulo
-	@Property String sinopsis
-	@Property List<Actor> actores
+	UUID id
+	String titulo
+	String sinopsis
+	List<Actor> actores
 
 	override toString() {
 		titulo

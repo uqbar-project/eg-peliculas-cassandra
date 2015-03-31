@@ -1,13 +1,15 @@
 package ar.edu.peliculas.domain
 
 import java.util.UUID
+import org.eclipse.xtend.lib.annotations.Accessors
 import org.uqbar.commons.utils.Observable
 
 @Observable
+@Accessors
 class Actor {
 	
-	@Property UUID id
-	@Property String nombre
+	UUID id
+	String nombre
 	
 	new() {
 		

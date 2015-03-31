@@ -52,10 +52,10 @@ class VerEstrenosWindow extends SimpleWindow<VerEstrenosAppModel> {
 	}
 
 	def void createResultsGrid(Panel mainPanel) {
-		val resultsPanel = new Panel(mainPanel)
-		resultsPanel.setLayout(new HorizontalLayout)
+		val resultsPanel = new Panel(mainPanel) => [
+			layout = new HorizontalLayout
+		]
 		new Table<Pelicula>(resultsPanel, Pelicula) => [
-			height = 200
 			width = 600
 			bindItemsToProperty("peliculas")
 			bindValueToProperty("peliculaSeleccionada")
