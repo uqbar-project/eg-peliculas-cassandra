@@ -13,6 +13,7 @@ import com.netflix.astyanax.serializers.MapSerializer
 import com.netflix.astyanax.serializers.StringSerializer
 import com.netflix.astyanax.thrift.ThriftFamilyFactory
 import java.text.SimpleDateFormat
+import java.time.LocalDate
 import java.util.Date
 import java.util.HashMap
 import java.util.List
@@ -42,9 +43,10 @@ class RepoPeliculasImpl {
 		keyspace = context.client
 	}
 
-	def List<Pelicula> getPeliculas(Date fechaEstreno) {
+	def List<Pelicula> getPeliculas(LocalDate fechaEstreno) {
 		val CQL3_CF = ColumnFamily.newColumnFamily("Cql3CF", StringSerializer.get, StringSerializer.get)
-		val fechaEstrenoString = new SimpleDateFormat("yyyy-MM-dd").format(fechaEstreno)
+		//val fechaEstrenoString = new SimpleDateFormat("yyyy-MM-dd").format(fechaEstreno)
+		val fechaEstrenoString = fechaEstreno.toString
 		val cqlResult = keyspace.prepareQuery(CQL3_CF).withCql(
 			"SELECT fecha_estreno, id, sinopsis, titulo, actores  FROM peliculas WHERE fecha_estreno = '" + fechaEstrenoString + "';").execute
 
@@ -83,7 +85,7 @@ class RepoPeliculasImpl {
 	def static void main(String[] args) {
 		new RepoPeliculasImpl() => [
 			// Fija, usar 01/02/2014
-			getPeliculas(new Date(114, 1, 1))
+			getPeliculas(LocalDate.of(2014, 2, 1))
 		]
 	}
 }

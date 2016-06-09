@@ -2,6 +2,7 @@ package ar.edu.peliculas.appModel
 
 import ar.edu.peliculas.domain.Pelicula
 import ar.edu.peliculas.home.RepoPeliculasImpl
+import java.time.LocalDate
 import java.util.Date
 import java.util.List
 import org.eclipse.xtend.lib.annotations.Accessors
@@ -11,7 +12,7 @@ import org.uqbar.commons.utils.Observable
 @Accessors
 class VerEstrenosAppModel {
 	
-	Date fechaEstreno
+	LocalDate fechaEstreno
 	List<Pelicula> peliculas
 	Pelicula peliculaSeleccionada
 	
@@ -19,7 +20,7 @@ class VerEstrenosAppModel {
 	RepoPeliculasImpl repoPeliculas = RepoPeliculasImpl.instance
 	
 	new() {
-		fechaEstreno = new Date(114, 1, 1)
+		fechaEstreno = LocalDate.of(2014, 2, 1)
 	}
 	
 	def void buscar() {
