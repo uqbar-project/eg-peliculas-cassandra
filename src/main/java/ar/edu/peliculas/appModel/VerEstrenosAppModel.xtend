@@ -1,9 +1,8 @@
 package ar.edu.peliculas.appModel
 
 import ar.edu.peliculas.domain.Pelicula
-import ar.edu.peliculas.home.RepoPeliculasImpl
+import ar.edu.peliculas.repo.RepoPeliculasImpl
 import java.time.LocalDate
-import java.util.Date
 import java.util.List
 import org.eclipse.xtend.lib.annotations.Accessors
 import org.uqbar.commons.utils.Observable
@@ -29,6 +28,8 @@ class VerEstrenosAppModel {
 	
 	def void limpiar() {
 		peliculaSeleccionada = null
+		peliculas = newArrayList
+		fechaEstreno = null
 	}
 	
 }

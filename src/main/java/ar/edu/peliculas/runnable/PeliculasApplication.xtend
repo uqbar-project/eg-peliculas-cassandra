@@ -12,7 +12,7 @@ class PeliculasApplication extends Application {
 	}
 
 	override protected Window<?> createMainWindow() {
-		return new VerEstrenosWindow(this, new VerEstrenosAppModel)
+		new VerEstrenosWindow(this, new VerEstrenosAppModel)
 	}
 	
 }

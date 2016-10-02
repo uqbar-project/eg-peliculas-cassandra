@@ -63,7 +63,7 @@ class VerEstrenosWindow extends SimpleWindow<VerEstrenosAppModel> {
 			layout = new HorizontalLayout
 		]
 		new Table<Pelicula>(resultsPanel, Pelicula) => [
-			width = 600
+			numberVisibleRows = 10
 			items <=> "peliculas"
 			value <=> "peliculaSeleccionada"
 			this.describeResultsGrid(it)
@@ -74,7 +74,7 @@ class VerEstrenosWindow extends SimpleWindow<VerEstrenosAppModel> {
 		new List<Actor>(actoresPanel) => [
 			 (items <=> "peliculaSeleccionada.actores").adapter = new PropertyAdapter(typeof(Actor), "nombre")
 			 width = 150
-			 height = 180
+			 height = 200
 		]
 	}
 	

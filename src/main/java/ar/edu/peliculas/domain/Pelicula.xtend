@@ -12,8 +12,10 @@ import org.uqbar.commons.utils.Observable
 class Pelicula implements Serializable {
 
 	UUID id
+	
 	String titulo
 	String sinopsis
+	
 	List<Actor> actores
 
 	override toString() {

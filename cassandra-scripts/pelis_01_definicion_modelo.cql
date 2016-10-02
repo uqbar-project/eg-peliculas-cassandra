@@ -1,5 +1,3 @@
-DROP KEYSPACE imdb;
-
 CREATE KEYSPACE IF NOT EXISTS imdb WITH REPLICATION = { 
 	'class' : 'SimpleStrategy', 
 	'replication_factor' : 1 };

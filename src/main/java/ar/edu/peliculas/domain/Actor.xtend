@@ -9,6 +9,7 @@ import org.uqbar.commons.utils.Observable
 class Actor {
 	
 	UUID id
+	
 	String nombre
 	
 	new() {
