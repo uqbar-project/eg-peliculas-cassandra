@@ -26,5 +26,9 @@ Cada película conoce los actores que participaron en ella.
 
 ![video](video/demoApp.gif)
 
-Para ayudarte a buscar fechas de estreno tenés un
+(las fechas de estreno posibles están explicadas en el panel de mensajes de la aplicación)
 
+## Branches
+
+* **master**: tiene la versión actual del Driver de Java (actualizado a Octubre 2016)
+* **astyanax2**: tiene la versión del driver Astyanax 2.0.2, utilizada para mostrar los ejemplos hasta Junio 2016
