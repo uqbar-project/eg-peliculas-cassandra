@@ -22,7 +22,7 @@ Cada película conoce los actores que participaron en ella.
 * Una vez completada la carga de películas, podés levantar la aplicación que está basado en
  * Arena 3.6.1
  * Xtend 2.10, con la dependencia definida manualmente
- * con el driver 3.1.0 de Cassandra para Java (te dejamos un [link a la documentación](http://docs.datastax.com/en/developer/java-driver//3.1/), que requiere la versión Guava 16 o posterior, por eso las dependencias con Xtend están definidas manualmente
+ * con el driver 3.1.0 de Cassandra para Java - te dejamos un [link a la documentación](http://docs.datastax.com/en/developer/java-driver//3.1/), que requiere la versión Guava 16 o posterior, por eso las dependencias con Xtend están definidas manualmente
 
 ![video](video/demoApp.gif)
 
