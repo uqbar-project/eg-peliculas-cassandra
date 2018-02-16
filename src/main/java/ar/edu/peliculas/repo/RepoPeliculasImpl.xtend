@@ -57,7 +57,7 @@ class RepoPeliculasImpl {
 	static RepoPeliculasImpl _instance
 
 	static def RepoPeliculasImpl getInstance() {
-		if (_instance == null) {
+		if (_instance === null) {
 			_instance = new RepoPeliculasImpl
 		}
 		_instance

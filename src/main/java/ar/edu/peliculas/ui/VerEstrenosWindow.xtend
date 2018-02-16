@@ -19,7 +19,7 @@ import org.uqbar.arena.widgets.tables.Column
 import org.uqbar.arena.widgets.tables.Table
 import org.uqbar.arena.windows.SimpleWindow
 import org.uqbar.arena.windows.WindowOwner
-import org.uqbar.commons.model.UserException
+import org.uqbar.commons.model.exceptions.UserException
 
 import static extension org.uqbar.arena.xtend.ArenaXtendExtensions.*
 
@@ -73,7 +73,7 @@ class VerEstrenosWindow extends SimpleWindow<VerEstrenosAppModel> {
 		new Label(actoresPanel).text = "Actores"
 		new List<Actor>(actoresPanel) => [
 			 (items <=> "peliculaSeleccionada.actores").adapter = new PropertyAdapter(typeof(Actor), "nombre")
-			 width = 150
+			 width = 520
 			 height = 200
 		]
 	}
@@ -100,7 +100,7 @@ class LocalDateTransformer implements ValueTransformer<LocalDate, String> {
 	}
 
 	override String modelToView(LocalDate valueFromModel) {
-		if (valueFromModel == null) {
+		if (valueFromModel === null) {
 			return null
 		}
 		return valueFromModel.format(formatter)

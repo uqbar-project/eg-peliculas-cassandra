@@ -5,7 +5,7 @@ import ar.edu.peliculas.repo.RepoPeliculasImpl
 import java.time.LocalDate
 import java.util.List
 import org.eclipse.xtend.lib.annotations.Accessors
-import org.uqbar.commons.utils.Observable
+import org.uqbar.commons.model.annotations.Observable
 
 @Observable
 @Accessors
