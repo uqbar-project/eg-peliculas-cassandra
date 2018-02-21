@@ -1,6 +1,6 @@
 # Estrenos de Películas - Proyecto Xtend con Cassandra
 
-![Travis](https://travis-ci.org/uqbar-project/eg-peliculas-cassandra.svg?branch=master)
+[![Build Status](https://travis-ci.org/uqbar-project/eg-peliculas-cassandra.svg?branch=master)](https://travis-ci.org/uqbar-project/eg-peliculas-cassandra)
 
 ## Objetivo
 Permite mostrar los estrenos de películas a partir de una fecha determinada. 
