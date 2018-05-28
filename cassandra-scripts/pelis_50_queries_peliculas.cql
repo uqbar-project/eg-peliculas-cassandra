@@ -7,7 +7,7 @@ SELECT *
  WHERE titulo = '6';
  */
  
-/*CREATE INDEX ON peliculas (titulo);*/
+//CREATE INDEX ON peliculas (titulo);
  
 
 

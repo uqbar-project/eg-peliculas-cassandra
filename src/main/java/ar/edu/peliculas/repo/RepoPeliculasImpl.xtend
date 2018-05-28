@@ -30,7 +30,7 @@ class RepoPeliculasImpl {
 			.from("imdb", "peliculas")
 			.where(QueryBuilder.eq("fecha_estreno", fechaEstrenoPosta))
 			.limit(10)
-			.allowFiltering()
+//			.allowFiltering()
        		.enableTracing()
 
 		val rs = session.execute(statement)
