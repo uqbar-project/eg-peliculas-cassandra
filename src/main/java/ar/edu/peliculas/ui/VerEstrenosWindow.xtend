@@ -86,7 +86,7 @@ class VerEstrenosWindow extends SimpleWindow<VerEstrenosAppModel> {
 
 		new Column<Pelicula>(table) //
 			.setTitle("Sinopsis")
-			.setFixedSize(450)
+			.setFixedSize(550)
 			.bindContentsToProperty("sinopsis")
 	}
 
