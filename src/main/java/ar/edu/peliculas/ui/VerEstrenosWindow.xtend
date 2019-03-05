@@ -31,7 +31,7 @@ class VerEstrenosWindow extends SimpleWindow<VerEstrenosAppModel> {
 		taskDescription = "Seleccione el criterio de búsqueda. Tips: fechas posibles son 01/12/2008, 01/06/2010, 01/12/2010, 01/02/2014, etc."
 	}
 
-	override def createMainTemplate(Panel mainPanel) {
+	override createMainTemplate(Panel mainPanel) {
 		super.createMainTemplate(mainPanel)
 		this.createResultsGrid(mainPanel)
 	}
