@@ -41,7 +41,7 @@ class RepoPeliculasImpl {
 				titulo = fila.getString("titulo")
 				sinopsis = fila.getString("sinopsis")
 				// Transformo el mapa de actores en una lista de objetos Actor
-				val mapaActores = fila.getMap("actores", typeof(UUID), typeof(String))
+				val mapaActores = fila.getMap("actores", UUID, String)
 				actores = mapaActores.entrySet.map [ entryActor |
 		  			new Actor(entryActor.key, entryActor.value)
 		  		].toList

@@ -72,7 +72,7 @@ class VerEstrenosWindow extends SimpleWindow<VerEstrenosAppModel> {
 		val actoresPanel = new Panel(resultsPanel)
 		new Label(actoresPanel).text = "Actores"
 		new List<Actor>(actoresPanel) => [
-			 (items <=> "peliculaSeleccionada.actores").adapter = new PropertyAdapter(typeof(Actor), "nombre")
+			 (items <=> "peliculaSeleccionada.actores").adapter = new PropertyAdapter(Actor, "nombre")
 			 width = 520
 			 height = 200
 		]
@@ -107,11 +107,11 @@ class LocalDateTransformer implements ValueTransformer<LocalDate, String> {
 	}
 	
 	override getModelType() {
-		return typeof(LocalDate)
+		return LocalDate
 	}
 
 	override getViewType() {
-		return typeof(String)
+		return String
 	}
 
 	override LocalDate viewToModel(String valueFromView) {
