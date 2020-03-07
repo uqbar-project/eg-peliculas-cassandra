@@ -39,8 +39,8 @@ CREATE TABLE IF NOT EXISTS "peliculas" (
 	titulo text,
 	sinopsis text,
 	actores map<uuid, text>,
-	primary key (fecha_estreno, id)	
-	);
+	primary key (fecha_estreno, id)
+);
 	 	
 /* CF actores */
 /* También tienen una estructura semi-estática, con la lista de peliculas en las

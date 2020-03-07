@@ -1,7 +1,6 @@
 package ar.edu.peliculas.domain
 
 import java.io.Serializable
-import java.util.ArrayList
 import java.util.List
 import java.util.UUID
 import org.eclipse.xtend.lib.annotations.Accessors
@@ -23,12 +22,8 @@ class Pelicula implements Serializable {
 	}	
 
 	new() {
-		actores = new ArrayList<Actor>
+		actores = newArrayList
 	}
-	
-	new(UUID myID) {
-		id = myID
-	}	
 	
 	def void agregarActor(Actor actor) {
 		actores.add(actor)
