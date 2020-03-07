@@ -15,6 +15,14 @@ Cada película conoce los actores que participaron en ella.
 ## Instalación
 
 * Tenés que instalar localmente [Cassandra](http://cassandra.apache.org/)
+* Verificá que esté levantado el server con
+
+```bash
+nodetool status
+```
+
+(en general `nodetool` te permitirá levantar, bajar el server y hacer todo tipo de monitoreo)
+
 * Correr los queries que están en la carpeta [cassandra-scripts](cassandra-scripts), donde se crea el keyspace y las columns families. Para eso tenés que levantar el shell de Cassandra Query Language, o `cqlsh`
 
 ```bash
