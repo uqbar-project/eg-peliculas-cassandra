@@ -33,9 +33,7 @@ cqlsh -f pelis_12_fixture_peliculas_actores.cql
 cqlsh -f pelis_13_fixture_actores_peliculas.cql 
 ```
 
-* Este video muestra cómo se trabaja desde el DevCenter
-
-![video](video/demo.gif)
+(el DevCenter dejó de tener soporte oficial de Apache)
 
 * Una vez completada la carga de películas, podés levantar la aplicación que está basado en
  * Arena 3.6.3
