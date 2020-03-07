@@ -15,22 +15,24 @@ Cada película conoce los actores que participaron en ella.
 ## Instalación
 
 * Tenés que instalar localmente [Cassandra](http://cassandra.apache.org/)
-* También el [DataStax DevCenter](http://www.datastax.com/products/datastax-devcenter-and-development-tools), la herramienta para correr queries en CQL (Cassandra Query Language). **Importante:** no instales el OpsCenter porque es la versión anterior del DevCenter que quedó deprecado.
-* Hay que levantar el servicio Cassandra
+* Correr los queries que están en la carpeta [cassandra-scripts](cassandra-scripts), donde se crea el keyspace y las columns families. Para eso tenés que levantar el shell de Cassandra Query Language, o `cqlsh`
 
 ```bash
-sudo service cassandra start
+cqlsh -f pelis_01_definicion_modelo.cql 
+cqlsh -f pelis_10_fixture_peliculas.cql 
+cqlsh -f pelis_11_fixture_actores.cql 
+cqlsh -f pelis_12_fixture_peliculas_actores.cql 
+cqlsh -f pelis_13_fixture_actores_peliculas.cql 
 ```
 
-* Correr los queries que están en la carpeta [cassandra-scripts](cassandra-scripts), donde se crea el keyspace y las columns families.
 * Este video muestra cómo se trabaja desde el DevCenter
 
 ![video](video/demo.gif)
 
 * Una vez completada la carga de películas, podés levantar la aplicación que está basado en
  * Arena 3.6.3
- * Xtend 2.17.0, con la dependencia definida manualmente
- * con el driver 3.7.1 de Cassandra para Java - te dejamos un [link a la documentación](http://docs.datastax.com/en/developer/java-driver/), que requiere la versión Guava 16 o posterior, por eso las dependencias con Xtend están definidas manualmente
+ * Xtend 2.20.0, con la dependencia definida manualmente
+ * con el driver 3.8.0 de Cassandra para Java - te dejamos un [link a la documentación](http://docs.datastax.com/en/developer/java-driver/), que requiere la versión Guava 16 o posterior, por eso las dependencias con Xtend están definidas manualmente
 
 ![video](video/demoApp.gif)
 

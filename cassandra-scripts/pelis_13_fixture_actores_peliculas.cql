@@ -1,8 +1,7 @@
 use imdb;
 
 /* The haunting of Helena */
-insert into "actores_peliculas" (actor_id,	pelicula_id, fecha_estreno,	titulo)
-  values (56c38a6b-2904-4d69-900b-403ee7b8eb46, f2d9ddec-3e43-4c29-9b48-da604c26eb08, '2014-02-01', 'The haunting of Helena');
+insert into "actores_peliculas" (actor_id,	pelicula_id, fecha_estreno,	titulo) values (56c38a6b-2904-4d69-900b-403ee7b8eb46, f2d9ddec-3e43-4c29-9b48-da604c26eb08, '2014-02-01', 'The haunting of Helena');
 
 insert into "actores_peliculas" (actor_id,	pelicula_id, fecha_estreno,	titulo)
   values (5b24aaa9-5749-49e9-8e33-bfd201e813f9, f2d9ddec-3e43-4c29-9b48-da604c26eb08, '2014-02-01', 'The haunting of Helena');
